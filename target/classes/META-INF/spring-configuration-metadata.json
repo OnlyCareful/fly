@@ -1,0 +1,42 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person",
+      "type": "com.start.fly.bean.Person"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.birth",
+      "type": "java.util.Date"
+    },
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.dog",
+      "type": "com.start.fly.bean.Dog"
+    },
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.last-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.list",
+      "type": "java.util.List<java.lang.Object>"
+    },
+    {
+      "sourceType": "com.start.fly.bean.Person",
+      "name": "person.maps",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>"
+    }
+  ]
+}
