@@ -1,0 +1,75 @@
+# 多环境配置
+spring:
+  profiles:
+    active: dev
+--- # 多文档块设置
+# 端口号
+server:
+  port: 8080
+
+# 给Java类赋值(@ConfigurationProperties 注解方式)
+# 类名
+person:
+  # 属性（名: 值）
+  age: 18
+  boos: 1
+  birth: 2018/10/01
+  maps: {k1: v1,k2: v2}
+  list:
+    - liso
+    - hao
+  dog:
+    name: 猫
+    age: 2
+  last-name: 应斯年
+
+# 给Java类赋值(@Value 注解方式)
+name: 狗
+
+# 日志记录
+# 指定日志级别
+logging:
+  level:
+    com: trace
+  # 指定日志文件名
+  # file: MyLogging.log
+  # 设置日志输出路径(默认文件名为spring.log)
+  # path: spring/log
+
+#  pattern:
+#    # 设置控制台输出的日志格式
+#    console:
+#    # 设置文件中日志输出的格式
+#    file:
+
+spring:
+  profiles: dev
+
+
+--- # 多文档块设置
+
+# 端口号
+server:
+  port: 8081
+
+# 给Java类赋值(@ConfigurationProperties 注解方式)
+# 类名
+person:
+  # 属性（名: 值）
+  age: 20
+  boos: 2
+  birth: 2018/10/02
+  maps: {k1: v1,k2: v2}
+  list:
+    - liso
+    - hao
+  dog:
+    name: 鸡
+    age: 1
+  last-name: 应斯年
+
+# 给Java类赋值(@Value 注解方式)
+name: 藏獒
+
+spring:
+  profiles: prod
