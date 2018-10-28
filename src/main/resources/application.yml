@@ -43,7 +43,22 @@ logging:
 #    file:
 
 spring:
+  # 连接数据库
+  datasource:
+    # 用户名
+    username: root
+    # 密码
+    password: zhang123
+    # 连接路径
+    url: jdbc:mysql://192.168.18.128:3306/fly?useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 指定项目启动时执行的sql
+  #    schema:
+#    - classpath:sql/fly.sql
+
   profiles: dev
+
 
 
 --- # 多文档块设置
