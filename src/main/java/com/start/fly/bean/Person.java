@@ -11,11 +11,11 @@ import java.util.Map;
 
 /**
  * @Component 将类交由Spring容器进行管理
- *
+ *  （要获取配置文件中的值类必须在Spring容器中）
  * @ConfigurationProperties 将类中的属性和配置文件中相关的配置进行绑定(作用于类上)(默认从全局配置文件中获取值)
  *      prefix = "person"  配置前缀
  * @Validated 开启JSR303规则数据校验(@Null,@NotNull,......)
- * @PropertySource(value = {"classpath:configBean.properties"}) 加载指定的配置文件
+ * @PropertySource (value = {"classpath:configBean.properties"}) 加载指定的配置文件
  */
 @Component
 @ConfigurationProperties(prefix = "person")
