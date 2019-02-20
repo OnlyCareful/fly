@@ -5,6 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Map;
 
+/**
+ * 返回视图测试
+ * @author InnerConce
+ * @date 2019/02/20
+ */
 @Controller
 public class ThymeleafController {
 
