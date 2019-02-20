@@ -2,6 +2,8 @@
 spring:
   profiles:
     active: dev
+# 开启springboot debug模式（会在控制台打印出自动配置报告）
+debug: true
 --- # 多文档块设置
 # 端口号
 server:
